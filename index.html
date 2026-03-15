@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional portfolio of Kushmi Anuththara Chandrasena, customer support, ERP, and business systems specialist based in Stockholm." />
+  <meta name="description" content="Professional portfolio of Kushmi Anuththara Chandrasena, business systems, SaaS, e-commerce, CRM support, and ERP implementation specialist based in Stockholm." />
   <title>Kushmi Anuththara Chandrasena | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
 
     body {
       margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
+      font-family: "Inter", Arial, sans-serif;
       color: var(--text);
       background: linear-gradient(180deg, #fbfaf7 0%, #f6f2eb 100%);
       line-height: 1.65;
@@ -90,14 +90,14 @@
 
     .section-title {
       margin: 18px 0 12px;
-      font-family: 'Playfair Display', Georgia, serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.12;
       letter-spacing: -0.03em;
     }
 
     .section-text {
-      max-width: 800px;
+      max-width: 820px;
       color: var(--muted);
       font-size: 1.02rem;
       text-align: justify;
@@ -176,7 +176,7 @@
 
     .hero-copy h1 {
       margin: 18px 0 20px;
-      font-family: 'Playfair Display', Georgia, serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: clamp(2.8rem, 6vw, 5rem);
       line-height: 0.98;
       letter-spacing: -0.05em;
@@ -409,22 +409,27 @@
       margin-bottom: 12px;
     }
 
-    .case-grid {
+    .case-grid,
+    .project-grid,
+    .cert-grid,
+    .link-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
       margin-top: 28px;
     }
 
-    .case-card {
+    .case-card,
+    .project-card {
       padding: 24px;
       border-radius: var(--radius-md);
       border: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,247,243,1) 100%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 247, 243, 1) 100%);
       box-shadow: var(--shadow);
     }
 
-    .case-label {
+    .case-label,
+    .project-label {
       display: inline-block;
       font-size: 0.82rem;
       font-weight: 700;
@@ -434,27 +439,42 @@
       margin-bottom: 10px;
     }
 
-    .case-card h3 {
+    .case-card h3,
+    .project-card h3 {
       margin: 0 0 10px;
       font-size: 1.12rem;
     }
 
-    .case-card p {
+    .case-card p,
+    .project-card p {
       margin: 0 0 12px;
       color: var(--muted);
       text-align: justify;
     }
 
-    .case-card strong {
-      color: var(--text);
+    .project-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 14px;
     }
 
-    .cert-grid,
-    .link-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 28px;
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--accent-dark);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .project-link:hover {
+      border-color: rgba(109, 76, 65, 0.4);
+      transform: translateY(-1px);
     }
 
     .cert,
@@ -571,6 +591,7 @@
       .cta-panel,
       .card-grid,
       .case-grid,
+      .project-grid,
       .cert-grid,
       .link-grid {
         grid-template-columns: 1fr;
@@ -631,13 +652,14 @@
     <div class="container nav">
       <a href="#top" class="brand" aria-label="Homepage">
         <strong>Kushmi A. Chandrasena</strong>
-        <span>Customer Support, ERP and Business Systems Specialist</span>
+        <span>Business Systems, SaaS and Implementation Specialist</span>
       </a>
 
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#cases">Case Highlights</a>
+        <a href="#projects">Projects</a>
         <a href="#certifications">Certifications</a>
         <a href="#links">Links</a>
         <a href="#contact" class="nav-cta">Contact</a>
@@ -650,12 +672,12 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="eyebrow">Stockholm based professional portfolio</span>
-          <h1>Customer support, ERP, and business systems experience with a global mindset.</h1>
+          <h1>SaaS, e-commerce, CRM support, ERP implementation, and analytics experience with a global mindset.</h1>
           <p>
-            I am Kushmi Anuththara Chandrasena, a customer facing business systems professional with more than five years of experience across technical support, ERP implementation, onboarding, issue investigation, training, and cross functional coordination. I have worked with international customers across EU, US, and APAC, supporting teams and users through post go live operations, integrations, documentation, and continuous process improvement.
+            I am Kushmi Anuththara Chandrasena, a customer-facing business systems professional with more than five years of experience across SaaS support, ERP implementation, onboarding, issue investigation, training, reporting, and cross-functional coordination. I have worked with international customers across EU, US, and APAC, supporting teams and users through post go-live operations, integrations, documentation, process improvement, and value-focused system adoption.
           </p>
           <p>
-            My background combines customer empathy, structured problem solving, and technical curiosity across ERP, commerce, reporting, and data environments. I enjoy roles where customer care, technology, and operations come together to create reliable outcomes for both users and internal teams.
+            My background combines customer empathy, structured problem solving, and technical curiosity across ERP, e-commerce, CRM-related support, reporting, and analytics environments. I enjoy roles where customer success, implementation, technology, and operations come together to create reliable outcomes for both users and internal teams.
           </p>
 
           <div class="hero-actions">
@@ -665,9 +687,9 @@
           </div>
 
           <div class="hero-meta">
-            <span>ERP and business systems</span>
-            <span>Customer onboarding and support</span>
-            <span>Integrations and issue resolution</span>
+            <span>SaaS and business systems</span>
+            <span>E-commerce and CRM support</span>
+            <span>Onboarding and implementation</span>
             <span>SQL, Excel, Power BI</span>
           </div>
         </div>
@@ -683,7 +705,7 @@
             </div>
             <div class="detail">
               <strong>Focus</strong>
-              <span>Customer care, ERP, systems support</span>
+              <span>SaaS, e-commerce, CRM support, ERP implementation</span>
             </div>
             <div class="detail">
               <strong>International exposure</strong>
@@ -701,19 +723,19 @@
     <section id="about" class="section">
       <div class="container">
         <span class="eyebrow">About me</span>
-        <h2 class="section-title">A practical bridge between customers, systems, and operations.</h2>
+        <h2 class="section-title">A practical bridge between customers, systems, implementation, and operations.</h2>
         <p class="section-text">
-          I have built my career at the intersection of customer support, ERP implementation, e commerce operations, and analytics. My experience includes onboarding customers, supporting post go live environments, investigating technical and operational issues, guiding users through workflows, validating data, documenting repeatable processes, and helping teams improve service quality over time. I bring a calm, structured, and service minded approach to fast moving environments where the quality of support directly shapes the customer experience.
+          I have built my career at the intersection of SaaS support, ERP implementation, e-commerce operations, CRM-related support, and analytics. My experience includes onboarding customers, supporting post go-live environments, investigating technical and operational issues, guiding users through workflows, validating data, documenting repeatable processes, and helping teams improve service quality over time. I bring a calm, structured, and service-minded approach to fast-moving environments where support quality, platform adoption, and implementation outcomes directly shape customer experience.
         </p>
 
         <div class="card-grid">
           <article class="card">
             <h3>Core strengths</h3>
             <ul class="list-clean">
-              <li>Technical customer support and case ownership</li>
-              <li>Customer onboarding, user guidance, and training</li>
-              <li>Issue triage, root cause investigation, and escalation support</li>
-              <li>Documentation, validation, and workflow improvement</li>
+              <li>SaaS and business systems support</li>
+              <li>ERP, CRM, and e-commerce platform support</li>
+              <li>Customer onboarding, go-live, and training</li>
+              <li>Issue triage, root cause analysis, and escalation support</li>
             </ul>
           </article>
 
@@ -723,7 +745,7 @@
               <li>Cin7 Core, Odoo, SAP, NetSuite knowledge</li>
               <li>Shopify, Amazon, Xero, POS, payment integrations</li>
               <li>Excel, Power BI, SQL, Databricks, Azure Data Factory</li>
-              <li>Data validation, reporting, and support analytics</li>
+              <li>Documentation, reporting, and support analytics</li>
             </ul>
           </article>
 
@@ -731,7 +753,7 @@
             <h3>What I value at work</h3>
             <ul class="list-clean">
               <li>Clear communication with customers and stakeholders</li>
-              <li>Reliable documentation and service consistency</li>
+              <li>Reliable implementation and service consistency</li>
               <li>Ownership from issue discovery to resolution</li>
               <li>Continuous learning and process improvement</li>
             </ul>
@@ -743,9 +765,9 @@
     <section id="experience" class="section">
       <div class="container">
         <span class="eyebrow">Experience</span>
-        <h2 class="section-title">Professional experience shaped by support, systems, and delivery.</h2>
+        <h2 class="section-title">Professional experience shaped by systems, support, implementation, and delivery.</h2>
         <p class="section-text">
-          My background spans customer support, ERP implementation, data validation, reporting, and cross functional collaboration. Across each role, I have focused on helping users succeed, making workflows clearer, and supporting more stable operations.
+          My background spans SaaS support, ERP implementation, CRM and e-commerce platform workflows, data validation, reporting, and cross-functional collaboration. Across each role, I have focused on helping users succeed, making workflows clearer, and supporting more stable operations.
         </p>
 
         <div class="timeline">
@@ -757,7 +779,7 @@
             <div class="company">Sogeti, Capgemini Group, Borlänge, Sweden</div>
             <ul class="list-clean">
               <li>Prepared, cleaned, and transformed datasets in Databricks using Python and SQL for reporting and analytics use cases.</li>
-              <li>Supported Azure Data Factory workflows and SQL based outputs to improve reporting consistency.</li>
+              <li>Supported Azure Data Factory workflows and SQL-based outputs to improve reporting consistency.</li>
               <li>Built Power BI dashboards and performed QA checks that strengthened issue detection and data accuracy.</li>
             </ul>
           </article>
@@ -769,7 +791,7 @@
             </div>
             <div class="company">WAOConnect, Australia</div>
             <ul class="list-clean">
-              <li>Ran requirements workshops and translated business needs into structured system workflows and support ready processes.</li>
+              <li>Ran requirements workshops and translated business needs into structured system workflows and support-ready processes.</li>
               <li>Configured and supported Odoo and Cin7 Core workflows across POS, purchasing, inventory, and accounting.</li>
               <li>Investigated issues across Shopify, Amazon, and Xero integrations using logs, reconciliations, and data review.</li>
               <li>Improved documentation and validation steps, reducing manual errors by 25 to 30 percent.</li>
@@ -783,7 +805,7 @@
             </div>
             <div class="company">SDP Global Services, Dubai, UAE</div>
             <ul class="list-clean">
-              <li>Handled ERP and CRM related support requests and structured data for compliance reporting and stakeholder needs.</li>
+              <li>Handled ERP and CRM-related support requests and structured data for compliance reporting and stakeholder needs.</li>
               <li>Built Excel and Power BI reports to track adoption, operational patterns, and recurring support signals.</li>
               <li>Investigated issues using logs and queries, documented findings clearly, and escalated complex cases for timely resolution.</li>
             </ul>
@@ -796,9 +818,9 @@
             </div>
             <div class="company">DEAR Systems, Becoming Cin7 Core, Colombo, Sri Lanka</div>
             <ul class="list-clean">
-              <li>Supported more than 50 retail and e commerce customers across EU, US, and APAC with onboarding, training, and go live support.</li>
+              <li>Supported more than 50 retail and e-commerce customers across EU, US, and APAC with onboarding, training, and go-live support.</li>
               <li>Validated master data and system records to improve operational accuracy across sales, inventory, and finance workflows.</li>
-              <li>Resolved cross system issues involving Shopify, Amazon, Xero, POS, and payment integrations.</li>
+              <li>Resolved cross-system issues involving Shopify, Amazon, Xero, POS, and payment integrations.</li>
               <li>Created support documentation and reusable templates that improved consistency and reduced repeat questions.</li>
             </ul>
           </article>
@@ -823,7 +845,7 @@
             <div class="company">Kims Global Lanka Pvt Ltd, Sri Lanka</div>
             <ul class="list-clean">
               <li>Supported basic database reporting and data handling for internal requests.</li>
-              <li>Built and maintained simple reporting outputs in Excel to support day to day operations.</li>
+              <li>Built and maintained simple reporting outputs in Excel to support day-to-day operations.</li>
               <li>Maintained documentation for tickets, logs, and system records.</li>
             </ul>
           </article>
@@ -834,28 +856,28 @@
     <section id="cases" class="section">
       <div class="container">
         <span class="eyebrow">Case highlights</span>
-        <h2 class="section-title">Selected examples of customer support and systems work.</h2>
+        <h2 class="section-title">Selected examples of support, implementation, and platform operations work.</h2>
         <p class="section-text">
-          These examples show the type of customer environments, support challenges, and operational improvements I have worked with. Sensitive details can remain anonymized while still showing the scope of my experience.
+          These examples show the type of customer environments, support challenges, implementation work, and operational improvements I have worked with. Sensitive details can remain anonymized while still showing the scope of my experience.
         </p>
 
         <div class="case-grid">
           <article class="case-card">
-            <span class="case-label">Onboarding and go live</span>
-            <h3>Retail and e commerce customer onboarding</h3>
-            <p><strong>Customer context:</strong> Retail and e commerce customers across EU, US, and APAC.</p>
-            <p><strong>Challenge:</strong> Customers needed guidance during onboarding and go live while managing sales, inventory, and finance workflows across multiple systems.</p>
-            <p><strong>What I did:</strong> Supported setup, validated data, guided users, documented workflows, and responded to post go live questions and issues.</p>
+            <span class="case-label">Onboarding and go-live</span>
+            <h3>SaaS and e-commerce platform onboarding</h3>
+            <p><strong>Customer context:</strong> Retail and e-commerce customers across EU, US, and APAC.</p>
+            <p><strong>Challenge:</strong> Customers needed guidance during onboarding and go-live while managing sales, inventory, and finance workflows across multiple systems.</p>
+            <p><strong>What I did:</strong> Supported setup, validated data, guided users, documented workflows, and responded to post go-live questions and issues.</p>
             <p><strong>Outcome:</strong> Helped customers adopt the platform more smoothly and reduced confusion through structured support and clear documentation.</p>
           </article>
 
           <article class="case-card">
             <span class="case-label">Integrations</span>
-            <h3>Cross system integration issue resolution</h3>
+            <h3>Cross-system integration issue resolution</h3>
             <p><strong>Customer context:</strong> Environments using Shopify, Amazon, Xero, POS, and payment systems.</p>
             <p><strong>Challenge:</strong> Orders, stock, or finance data did not always sync correctly between connected systems, causing operational interruptions.</p>
             <p><strong>What I did:</strong> Investigated logs, reviewed records, checked reconciliations, and worked across teams to identify the source of issues and restore data consistency.</p>
-            <p><strong>Outcome:</strong> Improved continuity for end users and supported more reliable day to day operations.</p>
+            <p><strong>Outcome:</strong> Improved continuity for end users and supported more reliable day-to-day operations.</p>
           </article>
 
           <article class="case-card">
@@ -870,10 +892,58 @@
           <article class="case-card">
             <span class="case-label">Reporting and insight</span>
             <h3>Support reporting and operational visibility</h3>
-            <p><strong>Customer context:</strong> Internal and customer facing support environments.</p>
+            <p><strong>Customer context:</strong> Internal and customer-facing support environments.</p>
             <p><strong>Challenge:</strong> Teams needed clearer visibility into adoption trends, recurring issues, and reporting outputs.</p>
-            <p><strong>What I did:</strong> Built and maintained Excel and Power BI reports, validated data, and highlighted recurring support signals for better follow up.</p>
+            <p><strong>What I did:</strong> Built and maintained Excel and Power BI reports, validated data, and highlighted recurring support signals for better follow-up.</p>
             <p><strong>Outcome:</strong> Improved visibility into patterns and supported stronger decision making.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <span class="eyebrow">Selected projects</span>
+        <h2 class="section-title">Analytics, data engineering, AI, and operations projects from my GitHub portfolio.</h2>
+        <p class="section-text">
+          Alongside my professional experience, I have built projects across business intelligence, data engineering, customer analytics, GIS, and mobility data. These projects show how I approach structured problem solving, reporting, automation, and analytics in practical environments.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-label">Business intelligence</span>
+            <h3>Azure Nuclear Power BI Pipeline</h3>
+            <p>Built a data pipeline and reporting flow using Azure tools, Databricks, and Power BI to transform operational data into dashboards and decision-ready insights.</p>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/kushitec15691" target="_blank" rel="noreferrer">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-label">Data engineering</span>
+            <h3>Olympic Data Engineering Project</h3>
+            <p>Designed and worked with structured datasets and reporting logic to support analytics, data modeling, and pipeline thinking across a multi-table Olympic project.</p>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/kushitec15691" target="_blank" rel="noreferrer">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-label">Customer analytics</span>
+            <h3>Insurance CLTV Prediction</h3>
+            <p>Applied customer analytics and machine learning techniques to understand customer value patterns and support data-driven segmentation and decision making.</p>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/kushitec15691" target="_blank" rel="noreferrer">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-label">AI and mobility</span>
+            <h3>GPS Mobility and Mode Identification Work</h3>
+            <p>Worked with GPS data, segmentation, analytics, and AI-related modeling approaches to support mobility analysis and transport-related data understanding.</p>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/kushitec15691" target="_blank" rel="noreferrer">View GitHub</a>
+            </div>
           </article>
         </div>
       </div>
@@ -884,7 +954,7 @@
         <span class="eyebrow">Education and certifications</span>
         <h2 class="section-title">Current knowledge built through systems, analytics, and practical learning.</h2>
         <p class="section-text">
-          My academic and certification background supports a practical career focused on customer support, business systems, reporting, and cross functional delivery.
+          My academic and certification background supports a practical career focused on business systems, customer operations, SaaS support, analytics, and cross-functional delivery.
         </p>
 
         <div class="cert-grid">
@@ -892,25 +962,30 @@
             <h3>MSc Data Science, Dalarna University</h3>
             <p>Completed in January 2026. Thesis focused on mobility mode identification using a hybrid approach with SegmentBERT, unsupervised clustering, and supervised classification.</p>
           </article>
+
           <article class="cert">
             <h3>BSc Software and Business Information Systems</h3>
-            <p>Cardiff Metropolitan University, First Class Honours. Strong foundation across business systems and software oriented problem solving.</p>
+            <p>Cardiff Metropolitan University, First Class Honours. Strong foundation across business systems and software-oriented problem solving.</p>
           </article>
+
           <article class="cert">
             <h3>Oracle NetSuite Certified Financial Associate</h3>
             <p>Issued February 2026. Recent certification that strengthens my ERP and finance systems profile.</p>
           </article>
+
           <article class="cert">
             <h3>Xero Advisor Certified</h3>
             <p>Certification supporting finance systems and accounting workflow understanding.</p>
           </article>
+
           <article class="cert">
             <h3>Databricks Fundamentals</h3>
             <p>Foundation in modern data platforms, processing, and analytics workflows.</p>
           </article>
+
           <article class="cert">
             <h3>Data Analytics Bootcamp</h3>
-            <p>Hands on experience in Python, SQL, data wrangling, and visualization.</p>
+            <p>Hands-on experience in Python, SQL, data wrangling, and visualization.</p>
           </article>
         </div>
       </div>
@@ -933,7 +1008,7 @@
 
           <a class="link-card" href="https://github.com/kushitec15691" target="_blank" rel="noreferrer">
             <h3>GitHub profile</h3>
-            <p>Explore my public repositories and portfolio projects related to data, ERP, analytics, and process improvement.</p>
+            <p>Explore my public repositories and portfolio projects related to analytics, business systems, ERP, AI, and process improvement.</p>
             <span class="link-arrow">Open GitHub</span>
           </a>
 
@@ -945,7 +1020,7 @@
 
           <a class="link-card" href="assets/Kushmi_Customer_Care_Portfolio_Updated.pdf" download>
             <h3>Download case portfolio</h3>
-            <p>Download my portfolio summary with selected customer support, systems, and delivery highlights.</p>
+            <p>Download my portfolio summary with selected customer support, systems, implementation, and delivery highlights.</p>
             <span class="link-arrow">Download portfolio</span>
           </a>
         </div>
@@ -957,11 +1032,12 @@
         <div class="cta-panel">
           <div>
             <span class="eyebrow" style="background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.18);">Open to relevant opportunities</span>
-            <h2 class="section-title" style="margin-top: 18px; color: #fff;">Looking for roles where customer care, systems thinking, and reliable execution matter.</h2>
+            <h2 class="section-title" style="margin-top: 18px; color: #fff;">Looking for roles where systems thinking, customer value, and reliable execution matter.</h2>
             <p>
-              I am especially interested in customer care, customer success, ERP, business systems, operations, and support focused roles where I can contribute practical experience, strong ownership, and a steady service mindset.
+              I am especially interested in business systems, SaaS support, customer success, ERP implementation, e-commerce operations, CRM support, analytics, and operational roles where I can contribute practical experience, strong ownership, and a structured service mindset.
             </p>
           </div>
+
           <div class="cta-actions">
             <a class="btn btn-light" href="mailto:kushitec15691@gmail.com">Email me</a>
             <a class="btn btn-outline-light" href="https://www.linkedin.com/in/kushmi-anuththara-04b741113/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
@@ -992,7 +1068,7 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
